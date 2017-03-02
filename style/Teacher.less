@@ -1,0 +1,960 @@
+@charset"utf-8";
+
+*{
+    margin:0;
+    padding:0;
+    font-family:微软雅黑;
+    list-style: none;
+    text-align: center;
+}
+@font-face {font-family: 'iconfont';
+            src: url('../fonts/iconfont.eot'); /* IE9*/
+            src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+            url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+           }   
+
+body{
+     width: 100%;
+     background-image: url(../image/03.png);
+     background-repeat: repeat;
+     position: relative;
+}
+.menu_head{
+    width: 100%;
+    height: 60px;
+    background-color: #dd2532;
+    position:fixed;
+    z-index:9999;
+}
+
+.menu_head_shadow{
+    box-shadow:0 0 30px #900;
+}
+
+.menu_head_main{
+    width: 1024px;
+    height: 60px;
+    position:fixed;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.head_logo{
+    width: 512px;
+    height: 60px;
+    margin-top: 4px;
+    float: left;
+    background-image:url(../image/02.png);
+    background-repeat: no-repeat;
+}
+.head_menulist{
+    width: 512px;
+    height: 60px;
+    float: left;
+}
+.menu_td{
+    width: 100px;
+    height: 60px;
+    float: right;   
+    &:hover{
+        background-color:#a92e36;
+    }
+}
+
+.menu_dd{
+    width:70px;
+    height: 30px;
+    margin: auto;
+    margin-top:15px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #e4515b;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.menu_td:hover .menu_dd{
+    height: 30px;
+    margin: auto;
+    margin-top:15px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.pic_lay{
+    height:180px;
+    width: 1024px;
+    margin:0 auto;
+    position: relative;
+    .index_pic{
+        position: absolute;
+        top:90px;
+        left: 504px;
+    }
+    .info_pic{
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        top: 123px;
+        left: 509px;
+        #info_pic{
+             font-family: "iconfont" !important;
+             font-size: 16px;
+             font-style: normal;
+             -webkit-font-smoothing: antialiased;
+             -webkit-text-stroke-width: 0.2px;
+             -moz-osx-font-smoothing: grayscale;
+             float: right;
+             height: 100%;
+             width: 100%;
+             color: red;
+             font-size: 60px;
+             line-height: 60px;
+             cursor: pointer;
+        }
+    }
+    .password_pic{
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        top: 123px;
+        left: 517px;
+        #psw_pic{
+             font-family: "iconfont" !important;
+             font-size: 16px;
+             font-style: normal;
+             -webkit-font-smoothing: antialiased;
+             -webkit-text-stroke-width: 0.2px;
+             -moz-osx-font-smoothing: grayscale;
+             float: right;
+             height: 100%;
+             width: 100%;
+             color: red;
+             font-size: 60px;
+             line-height: 60px;
+             cursor: pointer;
+        }
+    }
+}
+.main{
+    background-color: #FFF;
+    width:1024px;
+    height:auto;
+    margin:0 auto;
+    border-radius:3px;
+    .handle_page{
+        height:700px;
+        width:100%;
+        .main_header{
+            height: 40px;
+            width: 100%;
+            background:#dd2532;      
+            border-radius: 5px 5px 0 0;
+            border-bottom: 1px solid #9D9D9D;
+        }
+     .handle_select{
+        height: 40px;
+        width:97%;
+        margin-left: 17px;
+        border-bottom: 1px solid #9D9D9D;
+        .tab{
+            height:32px;
+            width: 80px;
+            color:#DD2532;
+            float: left;
+            margin-top: 7px;
+            line-height: 40px;
+            margin-left: 2px;
+            line-height: 32px;
+            font-size: 16px;
+            span{
+                display: none;
+                height: 0px;
+                width:79px;
+                border:1px solid #FFF;
+            }
+        }
+        .first_style{
+            height:32px;
+            width: 80px;
+            color:#DD2532;
+            float: left;
+            margin-top: 7px;
+            line-height: 40px;
+            margin-left: 2px;
+            line-height: 32px;
+            font-size: 16px; 
+            border:1px solid #9D9D9D    ;
+            span{
+                 display: block;
+                 height: 0px;
+                width:79px;
+                border:1px solid #FFF;
+            }
+        }  
+        .tab_active{
+            height:32px;
+            width: 80px;
+            color:#DD2532;
+            float: left;
+            margin-top: 7px;
+            line-height: 40px;
+            margin-left: 2px;
+            line-height: 32px;
+            font-size: 16px; 
+            border:1px solid #9D9D9D;
+              span{
+                display:block;
+                height: 0px;
+                width:79px;
+                border:1px solid #FFF;
+            }
+        }
+     }
+    .handle_detail{
+        height:44px;
+        width:97%;
+        color: #7C7878;
+        margin-left:17px;
+        border-bottom: 1px solid #9D9D9D;
+    }
+
+    .handle_ID{
+        height: 100%;
+        width: 18%;
+        float: left;
+        margin-left: 15px;
+        line-height: 44px;
+        font-size: 16px;
+            }
+    .handle_time{
+        height: 100%;
+        width: 17%; 
+        float: left;
+        line-height:44px;
+        font-size: 16px;
+    }
+    .handle_exp{
+        height: 100%;
+        width: 14%;
+        float: left;
+        margin-left: -11px;
+        line-height: 44px;
+        font-size: 16px;
+    }
+    .leave_word{
+        height: 100%;
+        width: 15%;
+        float: left;
+        margin-left:86px;
+        line-height: 44px;
+        font-size: 16px;
+    }
+    .operation{
+        height: 100%;
+        width: 20%;
+        float: left;
+        padding-left:60px;
+        line-height:44px;
+        font-size: 16px;
+    }
+
+}
+.reject_handle_detail{
+        display: none;
+        height:44px;
+        width:97%;
+        color: #7C7878;
+        margin-left:17px;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+      
+}
+.pass_handle_detail{
+        display: none;
+        height:44px;
+        width:97%;
+        color: #7C7878;
+        margin-left:17px;
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+  .pass_reject_handle_ID{
+        height: 100%;
+        width: 21%;   
+        float: left;
+        line-height:44px;
+        font-size: 16px;
+    }
+    .pass_reject_handle_time{
+        height: 100%;
+        width: 15%;    
+        float: left;
+        text-align: center;
+        line-height:44px;
+        font-size: 16px;
+    }
+    .pass_reject_handle_exp{
+        height: 100%;
+        width: 27%;
+        float: left;
+        text-align: left;
+        padding-left: 92px;
+        line-height: 44px;
+        font-size: 16px;
+    }
+    .pass_reject_leave_word{
+        height: 100%;
+        width: 7%;  
+        float: left; 
+        text-align: center;
+        line-height:44px;
+        font-size: 16px;
+    }
+.handling_data_page{
+    height:500px;
+    width:100%;
+    .handling_data_list{
+        height: 500px;
+        width:100%;
+    }
+}
+.pass_data_page{
+    height:500px;
+    width:100%;
+    display: none;
+    .handling_data_list{
+        height: 500px;
+        width:100%;
+    }
+}
+.reject_data_page{
+    height:500px;
+    width:100%;
+    display: none;
+    .handling_data_list{
+        height: 500px;
+        width:100%;
+    }
+}
+   
+      .data_list{
+        width:100%;
+        border-color: 1px solid red;
+            .handle_data_row{
+               height: 66px;
+               width: 97%;
+               margin: 0 auto;
+               border-bottom: 1px solid rgb(229, 229, 229);
+    }
+        .user_ID{
+            height: 100%;
+            width: 158px;
+            margin-left: 34px;
+            line-height: 65px;
+            float: left;
+            text-align: center;
+        }
+        .user_TIME{
+            height: 100%;
+            width: 196px;
+            line-height: 65px;
+            float: left;
+        }
+        .EXP{
+            height: 100%;
+            width:230px;
+            text-align: left;                    }
+        .Comment{
+            height: 100%;
+            width:200px;
+            text-align:left;
+            padding-left:13px;
+        }
+        .pass_or_reject{
+            height: 100%;
+            width: 168px;   
+            .PASS{
+                height: 20px;
+                width: 41px;
+                line-height: 19px;
+                text-align: center;
+                /* border-radius: 5px; */
+                color: #333333;
+                border: 1px solid #666666;
+                float: left;
+                font-size: 14px;
+                background: #f1f1f1;
+                cursor: pointer;
+                &:hover{
+                    background:#DD2532;
+                    color:white;
+                }
+            }
+            .REJECT{
+                height: 20px;
+                width: 41px;
+                line-height: 19px;
+                text-align: center;
+                /* border-radius: 5px; */
+                color: #333333;
+                border: 1px solid #666666;
+                margin-left:10px;
+                float: left;
+                font-size: 14px;
+                background: #f1f1f1;
+                cursor: pointer;
+                &:hover{
+                    background:#DD2532;
+                    color: white;
+                }
+            }
+        }
+    }
+.pass_list{
+        width:100%;
+        border-color: 1px solid red;
+        .pass_data_row{
+            height:66px;
+            width: 97%;
+            margin: 0 auto;
+            border-bottom: 1px solid rgb(229, 229, 229);
+        }
+        .pass_user_ID{
+            height: 100%;
+            width: 154px;
+            float: left;
+            margin-left: 42px;
+            line-height: 65px;
+            text-align: center;
+        }
+        .pass_user_TIME{
+            height: 100%;
+            width:223px;
+            line-height: 65px;
+            float: left;
+        }
+        .pass_EXP{
+            height: 100%;
+            width:236px;
+            text-align: left;
+            
+        }
+        .pass_Comment{
+            height: 100%;
+            width:269px;
+            text-align:left;
+            padding-left: 48px;
+        }
+  }      
+.reject_list{
+        height:65px;
+        width:100%;
+        border-color: 1px solid red;
+        .reject_data_row{
+            height:66px;
+            width: 97%;
+            margin: 0 auto;
+            border-bottom: 1px solid rgb(229, 229, 229);
+        }
+        .reject_user_ID{
+            height: 100%;
+            width: 154px;
+            margin-left: 42px;
+            line-height: 65px;
+            text-align: center;
+            float: left;
+        }
+        .reject_user_TIME{
+            height: 100%;
+            width: 223px;
+            line-height: 65px;
+            float: left;
+            
+        }
+        .reject_EXP{
+            height: 100%;
+            width: 236px;
+            text-align: left;
+        }
+        .reject_Comment{
+            height: 100%;
+            width: 269px;
+            text-align: left;
+            padding-left: 48px;
+        }
+  }      
+    
+    .footer{
+    height: 27px;
+    margin: 0 auto;
+    display: none;
+    .last_page{
+    height:27px;
+    width:20px;
+    border:1px solid rgb(249, 168, 168);
+    float: left;
+    cursor: pointer;
+    img{
+        margin-top: 8px;
+       }
+    }
+    #num_list{
+        height:27px;
+        width: auto;
+        float: left;
+        margin-left:6px;
+            .num{
+        height:27px;
+        width:27px;
+        float: left;
+        border: 1px solid rgb(249, 168, 168);
+        border-radius:4px;
+        line-height: 27px;
+        margin-left:5px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            background:red;
+            color: #FFF;
+        }
+    }
+    .num_click{
+        height:27px;
+        width:27px;
+        float: left;
+        border: 1px solid rgb(249, 168, 168);
+        border-radius:4px;
+        line-height: 27px;
+        margin-left:5px;
+        text-align: center;
+        background: red;
+        color:white;
+        cursor: pointer;
+        &:hover{
+            background:red;
+            color: #FFF;
+        }
+
+    }
+            }
+    .next_page{
+        height: 27px;
+        width:20px;
+        float: left;
+        cursor: pointer;
+        margin-left: 12px;
+        border:1px solid rgb(249, 168, 168);
+        img{
+            margin-top: 8px;
+        }
+    }
+    }
+}
+.change_all_imfo{
+    width:1024px;
+    height:auto;
+    margin:0 auto;
+    border-radius:3px;
+    .change_all_title{
+        height:45px;
+        width:97%;
+        margin:0 auto;
+        border-bottom: 1px solid #9D9D9D;
+        margin-top: 5px;
+    }
+}
+.Change_info_page{
+    height:480px;
+    width:1024px;
+    margin:0 auto;
+    margin-bottom: 200px;
+    form{
+        height:100%;
+        width:510px;
+        margin:0 auto;
+        table{height:100%;
+              width:510px;
+            tbody{height:100%;
+                  width:510px;
+                .teacher_name{
+                    height:30px;
+                    width:100%;
+                    margin-top: 70px;
+                    color:rgba(0,0,0,.7);
+                    font-size: 16px;
+                    .name{
+                        width:78px;
+                        float: left;
+                        margin-top: 3px;
+                        font-size: 18px;
+                        margin-left:147px;
+                    }
+                    .name_txt{
+                        width:224px;
+                        float: left;
+                        input{
+                        height: 26px;
+                        width: 165px;
+                        outline: none;
+                        text-align: left;
+                        padding-left: 4px;
+                        margin-left: -38px;
+                        margin-top: 3px;
+                        border: 0.5px solid rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+                .tel_num{
+                    height:30px;
+                    width:100%;
+                    font-size: 16px;
+                    margin-top:33px;
+                    .num{
+                        width:78px;
+                        float: left;
+                        margin-left: 147px;
+                        margin-top: 3px;
+                        font-size: 18px;
+                        color:rgba(0,0,0,.7);
+                    }
+                    .num_txt{
+                        width:224px;
+                        float: left;
+                        input{
+                        height: 26px;
+                        width: 165px;
+                        outline: none;
+                        padding-left: 4px;
+                        margin-left: -38px;
+                        text-align: left;
+                        margin-top: 3px;
+                        border: 0.5px solid rgba(0, 0, 0, 0.5);                
+                        }
+                    }
+                }
+                .save_refresh{
+                    height:33px;
+                    width:100%;
+                    font-size: 16px;
+                    margin-top:45px;
+                    .save{
+                        margin-left:194px;
+                        background:#dd2532;
+                        border-radius: 5px;
+                        line-height: 33px;
+                        height: 33px;
+                        width: 67px;
+                        cursor: pointer;
+                        float: left;
+                        color:#FFF;
+                        text-align: center;
+                        float: left;
+                    }
+                    .empty_tec_info{
+                       margin-left:45px;
+                        background:#dd2532;
+                        border-radius: 5px;
+                        line-height: 33px;
+                        height: 33px;
+                        width:67px;
+                        cursor: pointer;
+                        float: left;
+                        color:#FFF;
+                        text-align: center;
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
+.change_password{
+    width:1024px;
+    height:auto;
+    margin:0 auto;
+    form{
+        height:350px;
+        width:510px;
+        margin:0 auto;
+        table{height:100%;
+              width:100%;
+            tbody{height:100%;
+                  width:100%;
+                  .old_password{
+                    height:26px;
+                    width: 510px;
+                    color: #585555;
+                    font-size: 18px;
+                    margin-top:39px;
+                    .old_pass{
+                        height: 100%;
+                        width:75px;
+                        float: left;
+                        margin-left: 140px;
+                    }
+                    .old_pass_txt{
+                        float: left;
+                        input{
+                            width:165px;
+                            height: 24px;
+                            outline: none;
+                            padding-left: 5px;
+                            margin-top: -1px;
+                            margin-left: -3px;
+                            text-align: left;
+                            border: 0.5px solid rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                  }
+                  .new_password{
+                     height:26px;
+                    width: 510px;
+                    margin-top:18px;
+                    color:#585555;
+                    font-size: 18px;
+                    .new_pass{
+                        height: 100%;
+                        width:75px;
+                        float: left;
+                        margin-left: 140px;
+                    }
+                    .new_pass_txt{
+                        float: left;
+                        input{
+                            width:165px;
+                            height: 24px;
+                            outline: none;
+                            padding-left: 5px;
+                            text-align: left;
+                            margin-top: -1px;
+                            margin-left: -3px;
+                            border: 0.5px solid rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                  }
+                  .password_power_show{
+                    height:26px;
+                    width: 510px;
+                    margin-top:18px;
+                    display: block;
+                    #weak{
+                        height:22px;
+                        width:55px;
+                        display: block;
+                        background:rgb(153, 153, 153);
+                        color: #FFF;
+                        line-height: 22px;
+                        float: left;
+                        text-align: center;
+                        border-right: 1px solid #FFF;
+                    }
+                    #middle{
+                        height:22px;
+                        width:55px;
+                        float: left;
+                        display: block;
+                        background:rgb(153, 153, 153);
+                        color: #FFF;
+                        line-height: 22px;
+                        text-align: center;
+                        border-right: 1px solid #FFF;
+                    }
+                    #strong{
+                        height:22px;
+                        width:55px;
+                        float: left;
+                        display: block;
+                        background:rgb(153, 153, 153);
+                        color: #FFF;
+                        line-height: 22px;
+                        text-align: center;
+                        border-right: 1px solid #FFF;
+                    }
+                  }
+                  .confirm_password{
+                    height:26px;
+                    width: 510px;
+                    margin-top:18px;
+                    color:#585555;
+                    font-size: 17px;
+                      .confirm_pass{
+                        margin-left: 130px;
+                        display:block;
+                        float: left;
+                      }
+                      .confirm_pass_txt{
+                        float: left;
+                        input{
+                            width:165px;
+                            height: 24px;
+                            outline: none;
+                            padding-left: 5px;
+                            margin-top: -1px;
+                            margin-left: -3px;
+                            text-align: left;
+                            border: 0.5px solid rgba(0, 0, 0, 0.5);
+                        }
+                      }
+                  }
+                  .password_details{
+                    height: 35px;
+                    width:100%;
+                    td:first-child{
+                        display: block;
+                        font-size: 0.83em;
+                        margin-left: 72px;
+                        font-weight: bold;
+                        margin-top: 8px;
+                    }
+                    td:last-child{
+                        font-size: 12px;
+                        margin-left: 80px;
+                        margin-top: 6px;
+                    }
+                  }
+                  .confirm_or_cancle{
+                    height:35px;
+                    width: 510px;
+                    margin-top:18px;
+                    #confirm{
+                        margin-left: 203px;
+                        display: block;
+                        height: 33px;
+                        width: 67px;
+                        line-height: 33px;
+                        text-align: center;
+                        float: left;
+                        color: #FFF;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        background:#dd2532;
+                    }
+                    #cancle{
+                        margin-left: 45px;
+                        display: block;
+                        height: 33px;
+                        width: 67px;
+                        line-height: 33px;
+                        text-align: center;
+                        float: left;
+                        color: #FFF;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        background:#dd2532;
+                    }
+                  }
+             }
+         }
+    }
+}
+.shape{
+    height:1017px;
+    width: 100%;
+    background:rgba(53,53,53,.5);
+    position: absolute;
+    top:0;
+    display: none;
+}
+.leave_word_lay{
+    display: none;
+    background-color: white;
+    position: absolute;
+    height: 150px;
+    width:400px;
+    border:1px solid #666666;
+    left: 774px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: -490px;
+    z-index: 500;
+    .leave_word_header{
+        height:30px;
+        width:100%;
+        background-color: #dd2532;
+        span{
+            float:left;
+            color:white;
+            margin-top:3px;
+            margin-left: 3px;
+        } 
+        .leave_word_exit{
+                        font-family:"iconfont" !important;
+                        font-size:16px;font-style:normal;
+                        -webkit-font-smoothing: antialiased;
+                       -webkit-text-stroke-width: 0.2px;
+                        -moz-osx-font-smoothing: grayscale;
+                        float: right;
+                        height: 100%;
+                        width:32px;
+                        color:white;
+                        line-height: 30px;
+                        cursor: pointer;
+                    }        
+                        }
+    .leave_word_txt{
+        height: 69px;
+        width: 275px;
+        margin: 22px 16px;
+        float: left;
+        text-align: left;
+        outline: none;
+        padding-left: 5px;
+    }
+    .leave_word_confirm{
+        height: 35px;
+        width: 72px;
+        float: left;
+        color: white;
+        border-radius: 5px;
+        margin:38px -2px;
+        line-height: 35px;
+        text-align: center;
+        cursor: pointer;
+        background: #dd2532;
+    }
+}
+.Footer{
+  width: 1024px;
+height: 50px;
+left:0;
+right: 0;
+margin:auto;
+text-align: center;
+position: absolute;
+margin-top: 38px;
+background: url("../image/footer_line.png");
+background-repeat: no-repeat;
+background-position: 125px 0;
+  div{
+     margin-top: 15px;
+     font-family:"Arial Unicode MS";
+     font-size: 12px;
+     color: #998889;
+  } 
+}
+.info_Footer{
+  width: 1024px;
+  height: 50px;
+  left:0;
+  right:0;
+  text-align: center;
+  margin:auto;
+  position: fixed;
+  bottom:10px;
+  background:url("../image/footer_line.png");
+  background-repeat: no-repeat;
+  background-position: 125px 0; 
+
+  div{
+     margin-top: 15px;
+     font-family:"Arial Unicode MS";
+     font-size: 12px;
+     color: #998889;
+  } 
+}

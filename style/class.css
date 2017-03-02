@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Microsoft YaHei',Times, TimesNR, 'New Century Schoolbook', Georgia,
+ 'New York', serif;
+ text-align: center;
+}
+::-webkit-scrollbar  
+{  
+    width: 16px;  
+    height: 16px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+}  
+body{
+	 background-color:#e3e3e3;
+}
+.header{
+	background-color:#DD2432; 
+}
+.header_main{
+	margin:0 auto;
+	width:1024px;
+	height: 60px;
+}
+#home_logo{
+	display: inline-block;
+	margin-top: 5px;
+}
+.nav_list{
+	float: right;
+	width:56%;
+	height: 60px;
+}
+.nav_list a{
+	float: right;
+	width: 100px;
+	height: 60px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 60px;
+	list-style-type: none;
+	text-decoration: none;
+}
+.nav_list a:hover{
+ background-color: #a92136;
+}
+
+.nav_list a span{
+	margin: 0 auto;
+	margin-top: -17px;
+	display:block;
+	width:70px;
+	height: 4px;
+	background-color: #e5505a;
+}
+.nav_list a:hover span{
+	background-color:#fff; 
+}
+#reserve_class{
+	background-color:#a92136;
+}
+#reserve_class span{
+	background-color:#fff;
+}
+#wrapper_main{
+	margin: 35px auto;
+	width: 50px;
+	height: 50px;
+	background-color: #DD2432;
+	border-radius: 25px;
+}
+#wrapper_main img{
+	width: 48px;
+	height: 48px;
+	margin-top: 4px;
+    margin-right: 6px;
+}
+.main{
+	margin: 0 auto;
+	width: 1024px;
+	height: 520px;
+}
+#column_exam{
+	float: left;
+	width: 215px;
+	height: 520px;
+}
+#column_exam h3,#week_which{
+	height: 30px;
+	line-height: 32px;
+	background-color:#DD2432;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+	border-radius:6px 6px 0px 0px;
+	border-bottom:2px solid  #9f1a24;  
+}
+#week_number{
+	display:inline-block;
+	width: 3em;
+}
+.btn_up,.btn_down{
+	height: 34px;
+	background-color:#fff;
+}
+.btn_down{
+	border-radius: 0 0 6px 6px;
+}
+#exam_list{
+	position: relative;
+	bottom: 0px;
+	width: 215px;
+	height: 420px;
+	background-color: #fff;
+}
+.exam_list_name{
+	padding-top:12px;
+	padding-bottom:12px;
+    font-size: 14px;
+    line-height: 17px;
+	list-style-type: none;
+	border-bottom: 1px solid #b5b7b5;
+    background-color: #fff;
+    cursor: pointer;
+}
+.week_list_surruond{
+	height: 420px;
+	overflow: hidden;
+}
+.course_list{
+	float:right;
+	width: 800px;
+	height: 520px;
+}
+.header_coursr_list{
+	height: 67px;
+	color: #fff;
+}
+.btn_week{
+	display: inline-block;
+	width:58px;
+	height: 17px;
+}
+.btn_last{
+	background-image: url(../image/physics-system-pre-disabled.png);
+	margin-right: 44px;
+}
+.btn_last:active{
+	background-image: url(../image/physics-system-pre-disabled.png);
+}
+.btn_last_active{
+	background-image: url(../image/physics-system-pre-abled.png);
+}
+.btn_next{
+	background-image: url(../image/physics-system-next-disabled.png);
+	margin-left: 44px;
+}
+.btn_next:active{
+	background-image: url(../image/physics-system-next-disabled.png);
+}
+.btn_next_active{
+	background-image: url(../image/physics-system-next-abled.png);
+}
+#week_list{
+	height: 34px;
+	background-color: #fff;
+	border-bottom: 1px solid rgb(173,173,173);
+	color: #000;
+	border-radius: 0 0 6px 6px;
+}
+#week_list li{
+    float: right;
+	width: 20%;
+	font-size:14px;
+    list-style-type: none;
+    line-height: 34px;
+}
+.main_course_list{
+	height:453px; 
+}
+.main_course_each{
+	margin-top:5px;
+	height: 397px;
+}
+.item{
+	float: left;
+	margin-left:6px;
+	margin-bottom: 5px;
+	width: 155px;
+	height:93px;
+	line-height: 93px;
+	background-color: #DAD7D7;
+	border-radius: 3px;
+	color: #fff;
+ 
+}
+#c0,#c5,#c10,#c15{
+ margin: 0px;	
+}
+.item_active{
+	width: 151px;
+	height: 89px;
+	background-color: #DAD7D7;
+	border: 2px solid #DD2432;
+	color: #DD2432;
+	cursor: pointer;
+}
+.item_focus{
+	background-color: #DD2432;
+	color: #fff;
+}
+
+.choice{
+	height:55px;
+	 }
+.choice p{
+	float: left;
+	width:320px;
+	margin-left: 25%;
+	text-align: left;
+	font-size: 18px;
+}
+#btn_class_submit{
+	float: right;
+	width: 100px;
+	height: 30px;
+	color: #fff;
+	font-size: 16px;
+	background-color:#DD2432; 
+	border-radius: 8px;
+	border: none;
+}
+#btn_class_submit:focus{
+	outline: none;
+}
+#btn_class_submit:active{
+	background-color:#a92136;
+}
+#cut_off{
+	margin: 0 auto;
+	width: 650px;
+	height: 1px;
+	background-color: #bdbdbf;
+}
+.class_footer{
+    margin: 0 auto;
+	margin-top: 12px;
+	width: 680px;
+	height: 38px;
+	font-size: 12px;
+	color:#9f91ad;
+}
+.active-li{
+	background-color:#DD2432;
+	color:#FFF;
+}

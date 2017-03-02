@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Microsoft YaHei',Times, TimesNR, 'New Century Schoolbook', Georgia,
+ 'New York', serif;
+ text-align: center;
+}
+::-webkit-scrollbar  
+{  
+    width: 16px;  
+    height: 16px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+}  
+body{
+	 background-color:#e3e3e3;
+}
+.header{
+	background-color:#DD2432; 
+}
+.header_main{
+	margin:0 auto;
+	width:1024px;
+	height: 60px;
+}
+#home_logo{
+	display: inline-block;
+	margin-top: 5px;
+}
+.nav_list{
+	float: right;
+	width:56%;
+	height: 60px;
+}
+.nav_list li{
+	float: right;
+	width: 100px;
+	height: 60px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 60px;
+	list-style-type: none;
+	cursor: pointer;
+}
+.nav_list li:hover{
+ background-color: #a92136;
+}
+.nav_list li span{
+	margin: 0 auto;
+	margin-top: -17px;
+	display:block;
+	width:70px;
+	height: 4px;
+	background-color: #e5505a;
+}
+.nav_list li:hover span{
+	background-color:#fff; 
+}

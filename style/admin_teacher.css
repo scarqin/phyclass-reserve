@@ -1,0 +1,486 @@
+
+th,td,tbody,body{ padding: 0; margin:0; font-family: "Microsoft YaHei";}
+body{background-color: #e3e3e3;}
+table {  border-collapse:collapse;   border-spacing:0;  }
+input{outline: none;}
+ul{ margin: 0; padding: 0;}
+
+.head_lay{
+	width:100%;
+	height: 60px;
+	background-color: #dd2432;
+}
+
+.lay_resize{
+	width: 1024px !important;
+}
+
+
+.head{
+	width: 1024px;
+	height: 60px;
+	margin: 0 auto;
+	background-color: #dd2432;
+}
+
+.logo{
+	width: 394px;
+	height: 52px;
+	float: left;
+	margin-top: 4px;
+	background-image: url(../image/physics-system-logo.png);
+	background-size: 100% 100%;
+}
+.selection{
+	float: right;
+	width: 400px;
+	height: 60px;
+	padding-left: 0;
+}
+
+
+
+.selection li{
+	float: left;
+	width: 80px;
+	height: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+
+.selection li a{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Microsoft YaHei";
+	font-size: 16px;
+	color: #fff;
+	display: block;
+	line-height: 60px;
+	cursor: pointer;
+}
+
+
+.selection li a:hover,.selection li a:active{
+	background-color: #a92e36;
+	color: white;
+}
+
+#admin_teacher{
+	background-color: #a92e36;
+}
+
+#admin_teacher a span{
+	background-color: #fff;
+}
+
+.selection li a:hover span{
+	background-color: #fff;
+}
+
+
+.selection li a span{
+	position: absolute;
+	top: 45px;
+	width: 70px;
+	height: 4px;
+	margin-left: 5px;
+	display: block;
+	background-color: #e5505a;
+}
+
+.checked{
+	width: 100px;
+	height: 90px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 90px;
+}
+
+.checked img{
+	height:55px;
+	vertical-align: middle;
+}
+
+
+.content_lay{
+	width: 100%;
+	height: auto;
+	background-color: #e3e3e3;
+}
+
+.content{
+	margin: 0 auto;
+	width: 1024px;
+	height: inherit;
+	background-color: white;
+}
+
+.teacher_admin{
+	width: 98%;
+	height: 30px;
+	padding-left: 2%;
+	background-color: #dd2432;
+	border-bottom: #9f1a24 2px solid;
+	color: #fff;
+	text-align: left;
+	font-size: 18px;
+	font-family: "黑体";
+	line-height: 30px;
+	border-radius: 5px 5px 0 0;
+}
+
+.add_delete_edit{
+	width: 100%;
+	height: 50px;
+	border-bottom: #9f1a24 1px solid;
+}
+
+.delete,.add,.edit{
+	float: left;
+	width: 80px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 13px;
+	line-height: 30px;
+	display: block;
+	text-decoration: none;
+	font-family: "Microsoft YaHei";
+	font-size: 16px;
+	color: #DD2432;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.delete:hover,.add:hover,.edit:hover{
+	color: #fff;
+	background-color: #DD2432;
+}
+
+
+
+.content ul{
+	width: 100%;
+	height: 30px;
+	border-bottom: #9f1a24 1px solid;
+}
+
+.content ul li{
+	float: left;
+	height: 30px;
+	list-style: none;
+	line-height: 30px;
+	font-family: "Microsoft YaHei";
+	font-size: 18px;
+	color: #999;
+	text-align: left;
+	overflow: hidden;
+}
+
+.select,.info_select,.info_select label{
+	width: 100px;
+	height: 30px;
+	margin: 0;
+	margin-left: 20px;
+}
+
+.info_select label{
+	display: block;
+	margin-left: 0;
+	background-image: url(../image/iconfont-gouxuan.png);
+	background-repeat: no-repeat;
+	background-position: 5px 4px;
+	cursor: pointer;
+}
+
+.info_select input{
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+.is_checked{
+	background-image: url(../image/iconfont-gouxuan-checked.png) !important;
+}
+
+.name,.info_name{
+	width: 150px;
+	text-align: left !important;
+}
+.code,.info_code{
+	width: 150px;
+}
+.password,.info_password{
+	width: 150px;
+}
+.tel,.info_tel{
+	width: 150px;
+}
+.subject,.info_subject{
+	width: 300px;
+}
+.change,.info_change{
+	width: 100px;
+}
+.info_change{
+	background-image: url("../image/iconfont-edit.png");
+	background-repeat: no-repeat;
+	background-position: 28px 8px;
+	display: block;
+}
+
+.info_change_none{
+	display: none;
+}
+
+
+table tr{
+	float: left;
+	width: 1024px;
+	height: 30px;
+	margin-top: 15px;
+	padding-left: 0;
+}
+
+.tr_edit{
+	background-color: rgb(228, 228, 228);
+	border-radius: 10px;
+}
+
+
+table tr td{
+	float: left;
+	height: 30px;
+	list-style: none;
+	line-height: 30px;
+	font-family: "Microsoft YaHei";
+	font-size: 16px;
+	color: black;
+	text-align: left;
+	padding: 0;
+}
+
+
+.add_teacher{
+	position: relative;
+	width: 400px;
+	height: 300px;
+	margin: 100px auto;
+	margin-bottom: 0;
+	background-color: #fff;
+	z-index: 0;
+	border-radius: 2px;
+	vertical-align: middle;
+	background-color: #eee;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	display: none;
+}
+
+.object_show{
+	display: block !important;
+}
+
+.object_visible{
+	visibility: visible !important;
+}
+
+.add_teacher label{
+	width: 300px;
+	height: 24px;
+	margin: 30px 0 0 0;
+	line-height: 24px;
+	text-align: right;
+	display: inline-block;
+	color: #666;
+}
+
+.add_teacher label input{
+	width: 170px;
+	height: 21px;
+	padding: 0;
+	margin-left: 5px;
+	padding-left: 5px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
+
+.add_cancel{
+	width: 150px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+#add,#cancel{
+	float: left;
+	width: 60px;
+	height: 25px;
+	border: none;
+	color: #dd2432;
+	background-color: #fff;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+#cancel{
+	float: right;
+}
+
+#add:hover,#cancel:hover{
+	color: #fff;
+	background-color: #dd2432;
+}
+
+.change_subject_back,.add_taecher_back{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.back_active{
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.08);
+}
+
+
+
+.change_subject{
+	position: relative;
+	width: 450px;
+	height: 200px;
+	margin: 150px auto;
+	padding-top: 50px;
+	border: none;
+	background-color: #eee;
+	display: none;
+	text-align: center;
+}
+
+
+.change_subject label{
+	text-align: center;
+	font-size: 16px;
+}
+
+#subject{
+	display: block;
+	width: 250px;
+	height: 23px;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-left: 5px;
+	border: none;
+}
+
+.change_subject div{
+	width: 150px;
+	height: 25px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+#change,#cancel_change{
+	float: left;
+	width: 60px;
+	height: 25px;
+	margin: 0 auto;
+	background-color: #fff;
+	color: #dd2432;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	font-family: "Microsoft YaHei";
+}
+#cancel_change{
+	float: right;
+}
+
+#change:hover,#cancel_change:hover{
+	background-color: #dd2432;
+	color: #fff;
+	cursor: pointer;
+}
+
+.pagenav_background{
+	width: 100%;
+	height: 50px;
+	background-color: #e3e3e3;
+}
+
+.pagenav_lay{
+	width: 1024px;
+	height: 50px;
+	margin: 0 auto;
+	background-color: #fff;
+	display: block;
+}
+
+.pagenav{
+	width: auto;
+	margin: 0 auto;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.pagenav a,.pagenav span{
+	border: 1px #dd2432 solid;
+	text-decoration: none;
+	color: #dd2432;
+	padding: 0 5px;
+	cursor: pointer;
+}
+.pagenav a:hover,.pagenav span:hover{
+	background-color: #dd2432;
+	color: #fff;
+}
+
+.this_page{
+	color: #000;
+	background-color: #dd2432;
+}
+
+.prev_page,.next_page{
+	width: 16px;
+	height: 16px;
+	background-color: #fff;
+	border: none;
+	color: #000;
+	font-size: 14px;
+}
+
+.footer_num{
+   margin-left: 5px;
+}
+.footer_num_active{
+	background-color: #dd2432;
+	color:#fff !important;
+}
+
+#jump{
+	width: 50px;
+}
+
+
+.foot_lay{
+	width: 100%;
+	height: 30px;
+	background-color: #e3e3e3;
+}
+
+.foot{
+	width: 1024px;
+	height: 100%;
+	line-height: 30px;
+	background-color: #e3e3e3;
+	margin: 0 auto;
+	color: #999;
+	font-size: 12px;
+	text-align: center;
+}
+

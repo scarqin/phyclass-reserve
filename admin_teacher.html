@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大学物理实验预定管理页</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/admin_teacher.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/admin_teacher.css">
+</head>
+<body>
+	<div class="head_lay">
+		<div class="head">
+			<div class="logo"></div>
+			<ul class="selection">
+				<li id="admin_student"><a href="admin_student.html">学生管理<span></span></a></li>
+				<li id="admin_teacher"><a href="admin_teacher.html">教师管理<span></span></a></li>
+				<li id="admin_lesson_add"><a href="admin_lesson_add.html">课程管理<span></span></a></li>
+				<li id="admin_schedule"><a href="admin_schedule.html">课表录入<span></span></a></li>
+				<li id="exit"><a>退出登录<span></span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content_lay">
+	    <div class="checked"><img src="image/iconfont-jiaoshiguanli.png"></div>
+		<div class="content">
+			<div class="teacher_admin">教师管理</div>
+			<div class="add_delete_edit">
+				<a class="add">添加老师</a>
+				<a class="delete" id="delete_teacher">删除老师</a>
+<!-- 				<a class="edit">编辑老师</a>
+ -->			</div>
+			<ul>
+				<li class="select">选择</li>
+				<li class="name">教师名</li>
+				<li class="code">帐号</li>
+				<li class="tel">联系方式</li>
+				<li class="subject">科目</li>
+				<li class="change">编辑科目</li>
+			</ul>
+			<table id="teacher_info_list">
+			</table>
+			<div class="add_taecher_back">
+				<div class="add_teacher">
+					<label for="userid">账号:<input type="text" id="userid"></label>
+					<label for="password">密码:<input type="text" id="password"></label>
+					<label for="username">用户名:<input type="text" id="username"></label>
+					<label for="tel">电话:<input type="text" id="tel"></label>
+					<div class="add_cancel">
+						<input type="button" id="add" value="添加">
+						<input type="button" id="cancel" value="取消">
+					</div>
+				</div>
+			</div>
+			<div class="change_subject_back">
+				<div class="change_subject">
+					<label for="subject">请选择要修改的科目</label>
+					<select name="subject" id="subject">
+					</select>
+					<div>
+						<input type="button" value="修改" id="change">
+						<input type="button" value="取消" id="cancel_change">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pagenav_background">
+			<div class="pagenav_lay">
+			    <div class="pagenav">
+					<a class="prev_page">上一页</a>
+					<a id="first_page">首页</a>
+					<a id="last_page">末页</a>
+					<a class="next_page">下一页</a>
+					<span></span>
+			    </div>
+			</div>
+		</div>
+		<div class="foot_lay">
+			<div class="foot">广东工业大学 Guangdong University Of Technology & Design & Power By Rippletec.net</div>
+		</div>
+	</div>
+</body>
+</html>

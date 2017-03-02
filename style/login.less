@@ -1,0 +1,185 @@
+@charset"utf-8";
+
+*{
+     padding: 0;
+     margin: 0;
+     font-family: 微软雅黑;
+}
+
+@main_height:250px;
+@main_width:850px;
+
+.border-radius(@radius){
+  -webkit-border-radius:@radius;
+  -moz-border-radius:@radius;
+  border-radius:@radius;
+}
+body{
+     width: 100%;
+     background-image: url(../image/03.png);
+     background-repeat: repeat;
+}
+
+.all_txt{
+                         width:100%;
+                         height: 100%;
+                         .border-radius(4px);
+                         padding-left: 8px;
+                         outline:none;
+                         color:rgba(155, 148, 148, 0.5);
+                         border:1px solid  rgba(155, 148, 148, 0.5);
+                         line-height: 25px;
+                    }
+.main{
+     height:@main_height;
+     width: @main_width;
+     position: relative;
+     margin:9% auto auto;
+     .logo{
+           height:@main_height;
+           width:@main_width/2;
+           float: left;
+           div{
+            height:100px;
+            width: 100%;
+            margin-top: 70px;
+            img{
+              height: 90px;
+              width: 380px;
+            }
+           }
+     }
+     .txt{
+          height:@main_height;
+           width:@main_width/2;
+           float: left;
+           position: relative;
+
+           .select{
+            height: 17px;
+            width:65px;
+            padding-left: 16px;
+            line-height:17px;
+            border: 1px solid rgba(155, 148, 148, 0.8);
+            position: absolute;
+            border-radius: 6px;
+            top: 23px;
+            left: 307px;
+            list-style: none;
+            font-size: 14px;
+            color: rgba(155, 148, 148, 0.9); 
+
+            .select_down{
+              height: 15px;
+              width:15px;
+              position: absolute;
+              left:60px;
+              img{
+                cursor: pointer;
+              }
+            }
+            .select_up{
+              height: 15px;
+              width:15px;
+              position: absolute;
+              left:60px;
+              display: none;
+              img{
+                cursor: pointer;
+              }
+            }
+            .li2{
+              display: none;
+              width:66px;
+              padding-left: 15px;
+              margin-left: -16px;
+              border-radius: 5px;
+              &:hover{
+                background-color: red;
+                color:white;
+              }
+            }
+            .li3{
+              display: none;
+              width:66px;
+              padding-left: 15px;
+              margin-left: -16px;
+              border-radius: 5px;
+              &:hover{
+                background-color: red;
+                color:white;
+              }
+            }
+           }
+
+          .username{
+                    height:25px;
+                    width:61%;
+                    margin-top: 85px;
+                    margin-left: 28px;
+                    .user_txt{
+                      .all_txt;
+                    }
+          }
+          .password{
+                   height:25px;
+                   width:61%;
+                   margin-top: 20px;
+                   margin-left:28px;
+                   .pass_txt{
+                         .all_txt;
+                    }
+          }
+          .login{
+               height:73px;
+               width: 75px;
+               border-radius: 4px;
+               background-color: red;
+               color:white;
+               font-size: 16px;
+               position: absolute;
+               text-align: center;
+               line-height:73px;
+               top:85px;
+               left:310px;
+               cursor: pointer;
+          }
+     }
+}
+.pic{
+     height: 100px;
+     width: 100px;
+     border-radius: 50%;
+     margin-top: 70px;
+     margin-left: 5px;
+     border:1px solid red;
+     float: left;
+}
+.word_pic{
+  margin-top: 100px;
+  margin-left: 10px;
+  height:36px;
+  width:280px;
+  float: left;
+}
+.footer{
+  width: 1024px;
+height: 50px;
+position: absolute;
+left: 0;
+right: 0;
+margin:auto;
+text-align: center;
+bottom: 15px;
+/* margin-top: 20%; */
+background: url("../image/footer_line.png");
+background-repeat: no-repeat;
+background-position-x: 125px;
+
+  div{
+     margin-top: 15px;
+     font-family:"Arial Unicode MS";
+     font-size: 12px;
+     color: #998889;
+  } 
+}

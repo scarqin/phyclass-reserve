@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Microsoft YaHei',Times, TimesNR, 'New Century Schoolbook', Georgia,
+ 'New York', serif;
+ text-align: center;
+}
+::-webkit-scrollbar  
+{  
+    width: 16px;  
+    height: 16px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+}  
+body{
+	 background-color:#e3e3e3;
+}
+.header{
+	background-color:#DD2432; 
+}
+.header_main{
+	margin:0 auto;
+	width:1024px;
+	height: 60px;
+}
+#home_logo{
+	display: inline-block;
+	margin-top: 5px;
+}
+.nav_list{
+	float: right;
+	width:56%;
+	height: 60px;
+}
+.nav_list a{
+	float: right;
+	width: 100px;
+	height: 60px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 60px;
+	list-style-type: none;
+	text-decoration: none;
+}
+.nav_list a:hover{
+ background-color: #a92136;
+}
+.nav_list a span{
+	margin: 0 auto;
+	margin-top: -17px;
+	display:block;
+	width:70px;
+	height: 4px;
+	background-color: #e5505a;
+}
+.nav_list a:hover span{
+	background-color:#fff; 
+}
+#submit_message{
+	resize:none;
+}
+.wrapper_main{
+	margin: 0 auto;
+	height: 120px;
+}
+.wrapper_main img{
+	margin-top: 35px;
+	width: 50px;
+	height: 50px;
+}
+.font{
+	font-size: 18px;
+	color: #767676;
+}
+.submit_apply_main div{
+	margin-bottom: 15px;
+}
+.submit_apply_main span{
+	margin: 10px auto;
+	display: block;
+	color: #DD2432;
+	font-size: 16px;
+	width: 159px;
+	height: 21px;
+	border-bottom:1px dotted #fff;
+}
+#exam_content{
+	width: 250px;
+}
+#submit_message{
+	padding-left:5px;
+	width: 240px;
+	height: 100px;
+	background-color: #E8E8E8;
+	border:1px solid #d8d8d8;
+	font-size: 16px;
+	color:#5F4242;
+	text-align: start;
+}
+#submit_message:focus{
+	border: 1px solid #FFA2A9;
+    outline: none;
+}
+#max_length_box{
+	color:#796565;
+}
+#max_length{
+	display: inline;
+	border:none;
+	color: #DD2432;
+}
+
+.submit_apply{ 
+	display: inline-block;
+    margin-top: 15px;   
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+    text-align: center;
+    border:none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #CBCBCB;
+    cursor:pointer;
+}
+.submit_apply_active{
+    background-color: #DD2432;
+    color: #fff;
+}
+.submit_apply_active:active{
+    background-color: #fff;
+}

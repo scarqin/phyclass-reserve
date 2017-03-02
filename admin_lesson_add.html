@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大学物理实验预定管理页</title>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/admin_lesson_add.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/admin_lesson.css">
+</head>
+<body>
+	<div class="head_lay">
+		<div class="head">
+			<div class="logo"></div>
+			<ul class="selection">
+				<li id="admin_student"><a href="admin_student.html">学生管理<span></span></a></li>
+				<li id="admin_teacher"><a href="admin_teacher.html">教师管理<span></span></a></li>
+				<li id="admin_lesson_add"><a href="admin_lesson_add.html">课程管理<span></span></a></li>
+				<li id="admin_schedule"><a href="admin_schedule.html">课表录入<span></span></a></li>
+				<li id="exit"><a>退出登录<span></span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content_lay">
+	    <div class="checked"><img src="image/iconfont-xinjiankecheng.png"></div>
+		<div class="content">
+			<div class="lesson_admin">添加管理</div>
+			<div class="add_delete_edit">
+				<a href="admin_lesson_add.html" class="add">添加课程</a>
+				<a href="admin_lesson_delete.html" class="delete">删除课程</a>
+				<a href="admin_lesson_edit.html" class="edit">编辑课程</a>
+			</div>
+			<div class="form_lay">
+				<form>
+					<label for="change_name">课程名称：</label><input type="text" id="class_name">
+					<label for="change_classroom">课室名称：</label><input type="text" id="classroom_name">
+					<input type="button" class="save" value="确定添加">
+				</form>
+			</div>
+		</div>
+		<div class="foot_lay">
+			<div class="foot">广东工业大学 Guangdong University Of Technology & Design & Power By Rippletec.net</div>
+		</div>
+	</div>
+</body>
+</html>

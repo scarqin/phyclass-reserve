@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Microsoft YaHei',Times, TimesNR, 'New Century Schoolbook', Georgia,
+ 'New York', serif;
+ text-align: center;
+}
+::-webkit-scrollbar  
+{  
+    width: 16px;  
+    height: 16px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    border-radius: 10px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+}  
+body{
+	 background-color:#e3e3e3;
+}
+.header{
+	background-color:#DD2432; 
+}
+.header_main{
+	margin:0 auto;
+	width:1024px;
+	height: 60px;
+}
+.nav_list{
+	float: right;
+	width:56%;
+	height: 60px;
+}
+.nav_list a{
+	float: right;
+	width: 100px;
+	height: 60px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 60px;
+	list-style-type: none;
+	text-decoration: none;
+}
+.nav_list a:hover{
+ background-color: #a92136;
+}
+.nav_list a span{
+	margin: 0 auto;
+	margin-top: -17px;
+	display:block;
+	width:70px;
+	height: 4px;
+	background-color: #e5505a;
+}
+.nav_list a:hover span{
+	background-color:#fff; 
+}
+#myreserve{
+	background-color:#a92136;
+}
+#myreserve span{
+	background-color: #fff;
+}
+body{
+	height: 700px;
+}
+#transition{
+	height: 120px;
+	line-height: 120px;
+	background:url(../image/timewaiting.png) no-repeat center;
+	background-size:55px;
+}
+.myreserve_main{
+	margin:0 auto;
+	width:1116px;
+	background-color:#ECECF2;
+}
+.myreserve_main_table{
+	width: 1116px;
+	height: 414px;
+	color: #fff;
+	font-size: 15px;
+	border-collapse:collapse;
+	word-break:break-all;
+}
+.myreserve_header{
+	margin:0 auto;
+	margin-top:15px;
+    width: 1116px;
+    height: 52px;
+   	background-color:#DD2432;
+   	border-bottom: 2px solid #9f1a24
+}
+td{
+	padding:18px;
+}
+.book{
+	border-radius:12px 0 0 0;
+	width:400px;
+}
+.room{
+	width: 140px;
+}
+.teather_reply{
+	border-radius: 0 12px 0 0;
+	width:300px;
+}
+.pass{
+	color:#03751D;
+}
+.waiting{
+	color:#D6B20F;
+}
+.td_waiting{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.unsuccessful{
+	color:#D80717;
+}
+.text-left{
+	text-align: left;
+}
+.myreserve_footer{
+	width: 1116px;
+	margin:0 auto;
+	height: 38px;
+	line-height:38px;
+	text-align: center;
+	font-size: 15px;
+	color:#7D7D7D;
+	background-color: #fff;
+	border-radius:0 0 6px 6px;
+}
+.class_footer{
+	margin-top: 15px;
+	width:100%;
+	height: 38px;
+	text-align: center;
+	font-size: 12px;
+	color:#9f91ad;
+}

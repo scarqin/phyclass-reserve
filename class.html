@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>欢迎使用大学物理实验预定系统</title>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" href="style/class.css">
+	<script src="js/class.js"></script>
+</head>
+<body>
+<div class="header">
+<div  class="header_main">
+<img src="image/logo_home.png" id="logo_home">
+<div class="nav_list">
+    <a id="exit" href="javascript:">退出登陆<span></span></a>
+    <a id="myreserve" href="change-password.html">修改密码<span></span></a>
+    <a id="changepw" href="my-reserve.html">查看预定<span></span></a>
+	<a id="reserve_class" href="class.html">预定实验<span></span></a>
+</div>
+</div>
+</div>
+<!-- 过渡板块 -->
+<div id="wrapper_main"><img src="image/pic_yes.png"></div>
+<!-- 主要内容 -->
+<div class="main">
+<!-- 课程显示 -->
+<div id="column_exam">
+<h3>实验列表</h3>
+<div class="btn_up"><img src="image/physics-system-up.png" alt="up" id="up"></div>
+<div class="week_list_surruond">
+<ul id="exam_list">
+</ul>
+</div>
+<div class="btn_down"><img src="image/physics-system-down.png" alt="down" id="down"></div>
+</div>
+<!-- 课程表 -->
+<div class="course_list">
+    <!-- 课程表头 -->
+	<div class="header_course_list">
+		<div id="week_which">
+		<div class="btn_last btn_week"></div>
+		第<span id="week_number"></span>周
+		<div class="btn_next btn_week"></div>
+		</div>
+		<ul  id="week_list">
+			<li>星期五</li>
+			<li>星期四</li>
+			<li>星期三</li>
+			<li>星期二</li>
+			<li>星期一</li>
+		</ul>
+	</div>
+	<!-- 课程表内容 -->
+	<div class="main_course_list">
+	<div class="main_course_each">
+		<div class='item' id="c0"></div>
+		<div class='item' ></div>
+		<div class='item' ></div>
+		<div class='item' ></div>
+		<div class='item' ></div>
+        <div class='item' id="c5"></div>
+		<div class='item' ></div>
+		<div class='item' ></div>
+		<div class='item' ></div>
+		<div class='item' ></div>
+	    <div class='item' id="c10"></div>
+		<div class='item' ></div>
+		<div class='item' ></div>
+		<div class='item' ></div>
+		<div class='item' ></div>
+		<div class='item' id="c15"></div>
+	    <div class='item' ></div>
+        <div class='item' ></div>
+		<div class='item' ></div>
+		<div class='item' ></div>
+	</div>
+	<div class="choice">
+	<p class="choice_show">您的选择是:<span id='choice_show_text'></span></p>
+	<input type="submit" value="提交" id="btn_class_submit">
+	</div>
+	</div>
+	<div id="cut_off"></div>
+</div>
+</div>
+<footer class="class_footer">
+	广东工业大学 Guangdong University Of Technology & Design&Power By Rippletec.net 波纹
+</footer>
+</body>
+</html>

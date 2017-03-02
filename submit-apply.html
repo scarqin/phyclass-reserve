@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>欢迎使用大学物理实验预定系统</title>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/submit-apply.js"></script>
+	<link rel="stylesheet" href="style/submit-apply.css">
+</head>
+<body>
+<div class="header">
+<div  class="header_main">
+<img src="image/logo_home.png" id="logo_home">
+<div class="nav_list">
+    <a id="exit" href="javascript:">退出登陆<span></span></a>
+     <a id="myreserve" href="change-password.html">修改密码<span></span></a>
+    <a id="changepw" href="my-reserve.html">查看预定<span></span></a>
+	<a id="reserve_class" href="class.html">预定实验<span></span></a>
+</div>
+</div>
+</div>
+<div class="wrapper_main"><img src="image/submit.png">
+</div>
+<div class="submit_apply_main">
+		<div class="submit_exam_box font">实验<span id="exam_content">用拉伸法测量杨氏弹性模量</span></div>
+         <div class="submit_day_box font">时间<span id="time_content"></span></div>
+         <div class="leave_msg font">留言</div>
+         <div><textarea id="submit_message" maxlength="50"></textarea></div>
+         <p id="max_length_box">还可以输入<span id='max_length'>50</span>字  请留言后再提交!</p>
+         <a class="submit_apply" onclick='return false;'>提交申请</a>
+</div>
+</body>
+</html>

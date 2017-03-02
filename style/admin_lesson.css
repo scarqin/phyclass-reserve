@@ -1,0 +1,272 @@
+
+th,td,tbody,body{ padding: 0; margin:0; font-family: "Microsoft YaHei";}
+table {  border-collapse:collapse;   border-spacing:0;  }
+ul{ margin: 0; padding: 0;}
+input,select{outline: none;}
+select,input{font-family: "Microsoft YaHei";}
+.head_lay{
+	width:100%;
+	height: 60px;
+	background-color: #dd2432;
+}
+
+.lay_resize{
+	width: 1024px !important;
+}
+
+
+.head{
+	width: 1024px;
+	height: 60px;
+	margin: 0 auto;
+	background-color: #dd2432;
+}
+
+.logo{
+	width: 394px;
+	height: 52px;
+	margin-top: 4px;
+	float: left;
+	background-image: url(../image/physics-system-logo.png);
+	background-size: 100% 100%;
+}
+.selection{
+	float: right;
+	width: 400px;
+	height: 60px;
+	padding-left: 0;
+}
+
+
+
+.selection li{
+	float: left;
+	width: 80px;
+	height: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+
+.selection li a{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-decoration: none;
+	font-family: "Microsoft YaHei";
+	font-size: 16px;
+	color: #fff;
+	display: block;
+	line-height: 60px;
+	cursor: pointer;
+}
+
+.selection li a:hover,.selection li a:active{
+	background-color: #a92e36;
+	color: white;
+}
+
+#admin_lesson_add,#admin_lesson_edit,#admin_lesson_delete{
+	background-color: #a92e36;
+}
+#admin_lesson_add a span,#admin_lesson_edit a span,#admin_lesson_delete a span{
+	background-color: #fff;
+}
+
+.selection li a:hover span{
+	background-color: #fff;
+}
+
+
+.selection li a span{
+	position: absolute;
+	top: 45px;
+	width: 70px;
+	height: 4px;
+	margin-left: 5px;
+	display: block;
+	background-color: #e5505a;
+}
+
+
+.checked{
+	width: 100px;
+	height: 90px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 90px;
+}
+
+.checked img{
+	height:55px;
+	vertical-align: middle;
+}
+
+
+.content_lay{
+	width: 100%;
+	height: auto;
+	background-color: #e3e3e3;
+}
+
+.content{
+	margin: 0 auto;
+	width: 1024px;
+	height: auto;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.lesson_admin{
+	width: 98%;
+	height: 30px;
+	padding-left: 2%;
+	background-color: #dd2432;
+	border-bottom: #9f1a24 2px solid;
+	color: #fff;
+	text-align: left;
+	font-size: 18px;
+	font-family: "黑体";
+	line-height: 30px;
+	border-radius: 5px 5px 0 0;
+}
+
+.add_delete_edit{
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	border-bottom: #9f1a24 1px solid;
+}
+
+.delete,.add,.edit{
+	float: left;
+	width: 80px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 15px;
+	line-height: 30px;
+	display: block;
+	text-decoration: none;
+	font-family: "Microsoft YaHei";
+	font-size: 16px;
+	color: #dd2432;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.delete:hover,.add:hover,.edit:hover{
+	color: #fff;
+	background-color: #dd2432;
+}
+
+.add_delete_edit input{
+	width: 80px;
+	height: 30px;
+	margin-left: 10px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	color: red;
+	border: 1px red solid;
+	border-radius: 10px;
+	background-color: #fff;
+	visibility: hidden;
+}
+
+
+.content ul{
+	width: 100%;
+	height: 30px;
+	border-bottom: #9f1a24 1px solid;
+}
+
+.content ul li{
+	float: left;
+	height: 30px;
+	list-style: none;
+	line-height: 30px;
+	font-family: "Microsoft YaHei";
+	font-size: 18px;
+	color: red;
+	text-align: center;
+}
+
+.form_lay{
+	width: 350px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding-bottom: 200px;
+	vertical-align: middle;
+}
+
+.form_lay form label{
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	color: #666;
+	vertical-align: middle;
+}
+.form_lay form{width: 100%;}
+
+#select_class{
+	width: 246px;
+	height: 28px;
+	vertical-align: middle;
+	font-size: 16px;
+	margin-left: -4px;
+	border: 1px solid #e5e5e5;
+	background-color: #f5f5f5;
+	border-radius: 5px;
+}
+
+#change_name,#change_classroom,#class_name,#classroom_name{
+	width: 240px;
+	height: 22px;
+	padding-left: 5px;
+	vertical-align: middle;
+	background-color: #f5f5f5;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+}
+
+.save{
+	width: 100px;
+	height: 25px;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 0;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	background-color: #dd2432;
+	border: 1px red solid;
+	border-radius: 5px;
+	cursor: pointer;
+	display: block;
+}
+
+
+
+
+
+
+
+
+.foot_lay{
+	width: 100%;
+	height: 30px;
+	background-color: #e3e3e3;
+}
+
+.foot{
+	width: 1024px;
+	height: 100%;
+	line-height: 30px;
+	background-color: #e3e3e3;
+	margin: 0 auto;
+	color: #999;
+	font-size: 12px;
+	text-align: center;
+}
+

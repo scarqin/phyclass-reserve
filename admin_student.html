@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大学物理实验预定管理页</title>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/admin_student.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/admin_student.css">
+</head>
+<body>
+	<div class="head_lay">
+		<div class="head">
+			<div class="logo"></div>
+			<ul class="selection">
+				<li id="admin_student"><a href="admin_student.html">学生管理<span></span></a></li>
+				<li id="admin_teacher"><a href="admin_teacher.html">教师管理<span></span></a></li>
+				<li id="admin_lesson_add"><a href="admin_lesson_add.html">课程管理<span></span></a></li>
+				<li id="admin_schedule"><a href="admin_schedule.html">课表录入<span></span></a></li>
+				<li id="exit"><a>退出登录<span></span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="content_lay">
+	    <div class="checked"><img src="image/iconfont-xueshengguanli.png"></div>
+		<div class="content">
+			<div class="student_admin">学生管理</div>
+			<div class="search_and_delete">
+				<a class="search">查找学生</a>
+				<a class="delete" id="delete">删除学生</a>
+			    <form id="upload">
+				    <label for="select_file" class="select_file">导入Excel</label>
+				    <input type="file" name="file" id="select_file" />
+			    </form>
+			</div>
+			<ul>
+				<li class="select">选择</li>
+				<li class="name">姓名</li>
+				<li class="code">学号</li>
+				<li class="tel">电话</li>
+				<li class="major">专业</li>
+				<li class="grade">年级</li>
+				<li class="class">班级</li>
+			</ul>
+			<table id="student_info_list">
+			</table>
+			<div class="back">
+				<div class="search_student">
+					<div class="close"></div>
+					<input type="text" placeholder="请输入学生姓名或学号" id="student_name">
+					<input type="button" value="查找" id="submit_student_info">
+				</div>
+			</div>
+		</div>
+		<div class="pagenav_background">
+			<div class="pagenav_lay">
+			    <div class="pagenav">
+					<a class="prev_page">上一页</a>
+					<a id="first_page">首页</a>
+					<a id="last_page">末页</a>
+					<a class="next_page">下一页</a>
+					<span></span>
+			    </div>
+			</div>
+		</div>
+		<div class="foot_lay">
+			<div class="foot">广东工业大学 Guangdong University Of Technology & Design & Power By Rippletec.net</div>
+		</div>
+	</div>
+</body>
+</html>
